@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  font-size: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.page {
+  max-width: 1920px;
+  font-family: "PF Handbook Pro";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+/*общий контейнер ограничивающий ширину тела по макету*/
+.main-container {
+  max-width: 1520px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/***promo***/
+.promo {
+  background: rgba(49, 30, 62, 1);
+}
+
+/***header***/
+.header {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header__wrapper {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 17px auto 27px;
+}
+.header__top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+.logotype {
+  width: 226px;
+  display: flex;
+  flex-direction: column;
+}
+.company-name {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #3cc270;
+  letter-spacing: 0.2px;
+}
+@media (max-width: 1259px) {
+  .company-name {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
+.company-slogan {
+  font-size: 17px;
+  letter-spacing: -0.8px;
+  margin-top: -12px;
+}
+@media (max-width: 1259px) {
+  .company-slogan {
+    font-size: 14px;
+    letter-spacing: -0.5px;
+  }
+}
+.header__list-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+@media (max-width: 991px) {
+  .header__list-item {
+    display: none;
+  }
+}
+
+.header__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header__item-text {
+  font-family: "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.header__phone {
+  width: 183px;
+  height: 42px;
+  color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  background: #00894e;
+  background-image: linear-gradient(to bottom, #00b35f, #00894e);
+  font-size: 20px;
+  line-height: 33px;
+  letter-spacing: -0.2px;
+  transition: all 0.2s ease-in-out;
+}
+.header__phone:hover {
+  opacity: 0.9;
+}
