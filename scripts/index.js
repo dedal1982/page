@@ -1,9 +1,10 @@
 const burgerClick = document.querySelector(".header__burger");
 const scrollLock = document.querySelector(".page");
+const mobileMenu = document.querySelector(".mobile-menu");
 
 /***открытие бургера***/
 burgerClick.addEventListener("click", () => {
   burgerClick.classList.toggle("active");
-  // burgerOpenMobile.classList.toggle('header__mobile_open');
+  mobileMenu.classList.toggle("active");
   scrollLock.classList.toggle("lock");
 });
