@@ -22,7 +22,7 @@ function addForm() {
   // Создаем новую кнопку
   var button = document.createElement("button");
   button.className = "plusButton";
-  button.innerText = "Х";
+  button.innerText = "x";
   button.addEventListener("click", removeForm);
 
   // Добавляем инпут и кнопку в новую строку формы
