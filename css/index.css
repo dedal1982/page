@@ -525,11 +525,22 @@ ul {
   gap: 20px;
   margin: 50px auto 80px;
 }
+@media (max-width: 864px) {
+  .promo__content {
+    flex-direction: column;
+  }
+}
 .promo__left {
   max-width: 692px;
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 864px) {
+  .promo__left {
+    text-align: center;
+    align-items: center;
+  }
 }
 .promo h1 {
   font-weight: 700;
@@ -539,7 +550,7 @@ ul {
   letter-spacing: -1.7px;
   text-transform: uppercase;
 }
-@media (max-width: 991px) {
+@media (max-width: 1181px) {
   .promo h1 {
     font-size: 44px;
     line-height: 40px;
@@ -561,7 +572,7 @@ ul {
   margin-top: 10px;
   margin-bottom: 23px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1181px) {
   .promo-descr {
     margin-right: 0;
     font-size: 24px;
@@ -578,6 +589,12 @@ ul {
   align-items: center;
   gap: 27px;
   margin-top: 10px;
+}
+@media (max-width: 1181px) {
+  .promo__image-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .promo__image {
   width: 387px;
@@ -603,6 +620,11 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+@media (max-width: 1181px) {
+  .promo__text-box {
+    flex-direction: row;
+  }
 }
 .promo__text-box ul {
   display: flex;
@@ -705,6 +727,7 @@ ul {
   color: transparent;
   padding-left: 16px;
   box-sizing: border-box;
+  position: relative;
 }
 .formRow {
   display: flex;
@@ -733,12 +756,17 @@ ul {
   color: #bababa;
   border-bottom: 0.5px solid #bababa;
   margin-top: 16px;
+  transition: all0.2s ease-in-out;
+}
+.agreement:hover {
+  border-bottom: none;
 }
 .formRow input::-webkit-file-upload-button {
   visibility: hidden;
 }
 .formRow input::before {
-  content: "Файл не выбран";
+  position: absolute;
+  content: "Выберите картинку";
   color: #311e3e;
   display: inline-block;
   background: transparent;
@@ -749,6 +777,7 @@ ul {
   font-weight: 300;
   font-size: 15.5px;
   line-height: 20px;
+  font-family: "PF Handbook Pro", sans-serif;
 }
 .formRow input:active {
   outline: 0;
