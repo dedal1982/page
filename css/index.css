@@ -616,15 +616,20 @@ ul {
   }
 }
 .promo__image {
-  width: 100%;
+  width: 387px;
   height: 290px;
   border-radius: 8px;
   border: 2px solid #311e3e;
 }
 @media (max-width: 500px) {
   .promo__image {
-    width: 100%;
+    width: 350px;
     height: 197px;
+  }
+}
+@media (max-width: 380px) {
+  .promo__image {
+    width: 100%;
   }
 }
 .promo__image img {
