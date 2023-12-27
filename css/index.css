@@ -673,7 +673,7 @@ ul {
   padding: 12px 16px 14px 16px;
   box-sizing: border-box;
   outline: none;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 .form-input::placeholder {
   font-family: "Arial", sans-serif;
@@ -746,9 +746,9 @@ ul {
   white-space: nowrap;
   -webkit-user-select: none;
   cursor: pointer;
-}
-.formRow input:hover::before {
-  border-color: #311e3e;
+  font-weight: 300;
+  font-size: 15.5px;
+  line-height: 20px;
 }
 .formRow input:active {
   outline: 0;
@@ -763,4 +763,5 @@ ul {
   background: linear-gradient(0deg, #ffffff, #ffffff);
   border: 2px solid #f3f3f3;
   border-radius: 5px;
+  line-height: 20px;
 }
