@@ -10,20 +10,6 @@ burgerClick.addEventListener("click", () => {
 });
 
 /***добавляем поле для загрузки фото***/
-// document.addEventListener("DOMContentLoaded", function () {
-//   var addButton = document.getElementsByClassName("addButton")[0];
-//   addButton.addEventListener("click", addForm);
-
-//   function addForm() {
-//     var formsContainer = document.getElementById("formsContainer");
-//     var newForm = document.getElementsByClassName("form")[0].cloneNode(true);
-//     formsContainer.appendChild(newForm);
-//   }
-// });
-
-// const addButton = document.getElementById("addButton");
-// addButton.addEventListener("click", addButtonClick);
-
 function addForm() {
   // Создаем новую строку формы
   var formRow = document.createElement("div");
@@ -31,7 +17,7 @@ function addForm() {
 
   // Создаем новый инпут
   var input = document.createElement("input");
-  input.type = "text";
+  input.type = "file";
 
   // Создаем новую кнопку
   var button = document.createElement("button");

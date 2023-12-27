@@ -691,15 +691,18 @@ ul {
   color: #bababa;
   align-self: flex-start;
 }
-.form-input::-webkit-file-upload-button {
+.formRow input::-webkit-file-upload-button {
   visibility: hidden;
 }
-.form-input-file {
+
+.formRow input {
   width: 291px;
   height: 24px;
-  margin-bottom: 0;
+  border: 2px solid #f3f3f3;
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+  border-radius: 5px;
 }
-.forms-container {
+.formRow {
   display: flex;
   align-items: center;
   gap: 10px;
