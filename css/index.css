@@ -779,6 +779,7 @@ ul {
   .form-input {
     width: 310px;
     height: 40px;
+    margin-bottom: 16px;
   }
 }
 .form-input::placeholder {
@@ -798,6 +799,12 @@ ul {
   color: #bababa;
   align-self: flex-start;
 }
+@media (max-width: 767px) {
+  .form-label {
+    align-self: center;
+    margin-top: 23px;
+  }
+}
 .formRow input::-webkit-file-upload-button {
   visibility: hidden;
 }
@@ -812,6 +819,11 @@ ul {
   padding-left: 16px;
   box-sizing: border-box;
   position: relative;
+}
+@media (max-width: 767px) {
+  .formRow input {
+    width: 277.57px;
+  }
 }
 .formRow {
   display: flex;
@@ -877,4 +889,9 @@ ul {
   border: 2px solid #f3f3f3;
   border-radius: 5px;
   line-height: 20px;
+}
+@media (max-width: 767px) {
+  .plusButton {
+    width: 22.89px;
+  }
 }
