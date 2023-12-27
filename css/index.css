@@ -14,7 +14,7 @@ ul {
 }
 .page {
   max-width: 1920px;
-  font-family: "PF Handbook Pro";
+  font-family: "PF Handbook Pro", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -510,4 +510,114 @@ ul {
 .promo__sub:hover .promo__nav-sub {
   display: flex;
   flex-direction: column;
+}
+.promo__content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 60px auto 80px;
+}
+.promo__left {
+  max-width: 692px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 17px;
+}
+.promo h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 48px;
+  color: #311e3e;
+  letter-spacing: -1.7px;
+  text-transform: uppercase;
+}
+@media (max-width: 991px) {
+  .promo h1 {
+    font-size: 44px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .promo h1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+.promo-descr {
+  max-width: 527px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 28.8px;
+  color: #311e3ecc;
+  margin-top: 10px;
+  margin-bottom: 23px;
+}
+@media (max-width: 991px) {
+  .promo-descr {
+    margin-right: 0;
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .promo-descr {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+}
+.promo__image-box {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  margin-top: 10px;
+}
+.promo__image {
+  width: 387px;
+  height: 290px;
+  border-radius: 8px;
+  border: 2px solid #311e3e;
+}
+.promo__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.promo h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.2px;
+  color: #311e3e;
+  text-transform: uppercase;
+}
+.promo__text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.promo__text-box ul {
+  display: flex;
+  flex-direction: column;
+}
+.promo__text-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 300;
+  font-size: 24px;
+  color: #311e3e;
+}
+.promo__text-item span {
+  font-weight: 500;
+  color: #00b35f;
+}
+.promo__text-price {
+  font-weight: 500;
+  font-size: 40px;
+  color: #00b35f;
+  letter-spacing: -1.7px;
 }
