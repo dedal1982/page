@@ -8,3 +8,57 @@ burgerClick.addEventListener("click", () => {
   mobileMenu.classList.toggle("active");
   scrollLock.classList.toggle("lock");
 });
+
+/***добавляем поле для загрузки фото***/
+// document.addEventListener("DOMContentLoaded", function () {
+//   var addButton = document.getElementsByClassName("addButton")[0];
+//   addButton.addEventListener("click", addForm);
+
+//   function addForm() {
+//     var formsContainer = document.getElementById("formsContainer");
+//     var newForm = document.getElementsByClassName("form")[0].cloneNode(true);
+//     formsContainer.appendChild(newForm);
+//   }
+// });
+
+// const addButton = document.getElementById("addButton");
+// addButton.addEventListener("click", addButtonClick);
+
+function addForm() {
+  // Создаем новую строку формы
+  var formRow = document.createElement("div");
+  formRow.className = "formRow";
+
+  // Создаем новый инпут
+  var input = document.createElement("input");
+  input.type = "text";
+
+  // Создаем новую кнопку
+  var button = document.createElement("button");
+  button.className = "plusButton";
+  button.innerText = "Х";
+  button.addEventListener("click", removeForm);
+
+  // Добавляем инпут и кнопку в новую строку формы
+  formRow.appendChild(input);
+  formRow.appendChild(button);
+
+  // Добавляем новую строку формы в контейнер
+  var formContainer = document.getElementById("formContainer");
+  formContainer.appendChild(formRow);
+}
+
+function removeForm(event) {
+  // Получаем родительскую строку формы
+  var formRow = event.target.parentNode;
+
+  // Получаем контейнер форм
+  var formContainer = document.getElementById("formContainer");
+
+  // Удаляем строку формы из контейнера
+  formContainer.removeChild(formRow);
+}
+
+// Получаем кнопку "+" и добавляем обработчик клика
+var plusButton = document.querySelector(".plusButton");
+plusButton.addEventListener("click", addForm);

@@ -216,6 +216,55 @@
                 </div>
               </div>
             </div>
+            <div class="promo__right">
+              <form class="promo__form" action="#">
+                <div class="promo__form-top">
+                  <h4>Оценка онлайн</h4>
+                  <span>Ответим в течение 10 минут</span>
+                </div>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Марка и модель автомобиля"
+                />
+                <input
+                  class="form-input"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required
+                  placeholder="Телефон*"
+                />
+                <input
+                  class="form-input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Ваш комментарий (необязательно)"
+                />
+                <label class="form-label" for="avatar"
+                  >Фотографии автомобиля (необязательно)</label
+                >
+                <div id="formsContainer">
+                  <div class="forms-container">
+                    <div class="form forms-container">
+                      <input
+                        class="form-input form-input-file"
+                        type="file"
+                        accept="image/*"
+                        placeholder="Выберите картинку"
+                      />
+                      <button id="addForm" class="addButton">+</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
