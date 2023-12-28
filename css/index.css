@@ -1052,12 +1052,13 @@ ul {
 @media (max-width: 1024px) {
   .condition-list {
     margin-top: 40px;
-    gap: 32px;
+    row-gap: 32px;
   }
 }
 @media (max-width: 767px) {
   .condition-list {
-    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 149px));
   }
 }
 .condition-item {
