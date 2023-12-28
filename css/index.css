@@ -1394,6 +1394,7 @@ ul {
   width: 11px;
   height: 19px;
   position: absolute;
+  z-index: 10;
 }
 .bought-out-prev {
   left: -18px;
