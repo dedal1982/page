@@ -24,6 +24,24 @@ ul {
   margin: 0 auto;
   position: relative;
 }
+.section-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 48px;
+  color: #ffffff;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 32px;
+  }
+}
 /*общий контейнер ограничивающий ширину тела по макету*/
 .main-container {
   max-width: 1200px;
@@ -930,23 +948,9 @@ ul {
   }
 }
 .advantages h2 {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 48px;
   color: #ffffff;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
 }
-@media (max-width: 1024px) {
-  .advantages h2 {
-    font-size: 40px;
-  }
-}
-@media (max-width: 767px) {
-  .advantages h2 {
-    font-size: 32px;
-  }
-}
+
 .advantages-list {
   width: 100%;
   display: flex;
@@ -1017,4 +1021,86 @@ ul {
   line-height: 21.6px;
   text-align: center;
   color: #ffffff;
+}
+/***condition***/
+.condition {
+  background: #ffffff;
+}
+.condition__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.condition h2 {
+  color: #311e3e;
+}
+@media (max-width: 767px) {
+  .condition h2 {
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    line-height: 35px;
+  }
+}
+.condition-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 70px;
+}
+@media (max-width: 1024px) {
+  .condition-list {
+    margin-top: 40px;
+    gap: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .condition-list {
+    margin-top: 24px;
+  }
+}
+.condition-item {
+  max-width: 203px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 1024px) {
+  .condition-item {
+    max-width: 148px;
+  }
+}
+@media (max-width: 767px) {
+  .condition-item {
+    gap: 0;
+  }
+}
+.condition-image {
+  width: 203px;
+  height: 172px;
+}
+@media (max-width: 1024px) {
+  .condition-image {
+    width: 148px;
+    height: 126px;
+  }
+}
+.condition-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.condition-desc {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 22.8px;
+  text-align: center;
+  color: #311e3e;
+}
+@media (max-width: 767px) {
+  .condition-desc {
+    line-height: 28.8px;
+  }
 }
