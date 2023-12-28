@@ -1474,11 +1474,25 @@ ul {
     margin-top: 48px;
   }
 }
+@media (max-width: 767px) {
+  .ransom {
+    margin-top: 18px;
+  }
+}
 .ransom-list {
   margin-top: 75px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .ransom-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 181px));
+    justify-content: center;
+    row-gap: 70px;
+    margin-top: 51px;
+  }
 }
 .ransom-list-item {
   max-width: 237px;
@@ -1488,16 +1502,16 @@ ul {
   align-items: center;
   position: relative;
 }
-.ransom-list li:nth-child(1) {
+.ransom-list li:nth-child(1) .ransom-list-item {
   max-width: 199px;
 }
-.ransom-list li:nth-child(2) {
+.ransom-list li:nth-child(2) .ransom-list-item {
   max-width: 221px;
 }
-.ransom-list li:nth-child(3) {
+.ransom-list li:nth-child(3) .ransom-list-item {
   max-width: 237px;
 }
-.ransom-list li:nth-child(4) {
+.ransom-list li:nth-child(4) .ransom-list-item {
   max-width: 233px;
 }
 .ransom-list-item::after {
@@ -1510,16 +1524,16 @@ ul {
   content: none;
 }
 @media (max-width: 1024px) {
-  .ransom-list li:nth-child(1) {
+  .ransom-list li:nth-child(1) .ransom-list-item {
     max-width: 129px;
   }
-  .ransom-list li:nth-child(2) {
+  .ransom-list li:nth-child(2) .ransom-list-item {
     max-width: 142px;
   }
-  .ransom-list li:nth-child(3) {
+  .ransom-list li:nth-child(3) .ransom-list-item {
     max-width: 181px;
   }
-  .ransom-list li:nth-child(4) {
+  .ransom-list li:nth-child(4) .ransom-list-item {
     max-width: 149px;
   }
   .ransom-list-item::after {
@@ -1540,6 +1554,46 @@ ul {
   .ransom-desc {
     font-size: 16px;
     line-height: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .ransom-list-item {
+    width: 181px;
+  }
+  .ransom-list-item::after {
+    bottom: -20px;
+  }
+  .ransom-list li:nth-child(3) {
+    order: 4;
+  }
+  .ransom-list li:nth-child(2) .ransom-list-item::after {
+    top: 243px;
+    right: 40px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  .ransom-list li:nth-child(1) .ransom-list-item::after {
+    right: -67px;
+    top: 52px;
+  }
+  .ransom-list li:nth-child(3) .ransom-list-item::after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    right: 155px;
+    bottom: 150px;
+  }
+  .ransom-list li:nth-child(2) .ransom-list-item {
+    margin-left: auto;
+  }
+  .ransom-list li:nth-child(3) .ransom-list-item {
+    margin-left: auto;
+    max-width: 149px;
   }
 }
 .ransom-circle {
