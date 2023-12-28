@@ -1900,4 +1900,11 @@ ul {
   margin-top: 15px;
 }
 .any-list li:nth-child(4) .any-list-item {
+  max-width: 194px;
+}
+.any-list li:nth-child(3) .any-list-item {
+  max-width: 241px;
+}
+.any-list li:nth-child(2) .any-list-item {
+  max-width: 199px;
 }
