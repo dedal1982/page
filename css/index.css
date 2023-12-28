@@ -1156,10 +1156,89 @@ ul {
   padding: 62px 102px 64px 102px;
   box-sizing: border-box;
   z-index: 3;
+  position: relative;
+}
+.ticket-centr-bgl {
+  width: 67.14px;
+  height: 67.14px;
+  border-radius: 50%;
+  background: rgba(49, 30, 62, 1);
+  position: absolute;
+  display: none;
+}
+.ticket-centr-bgr {
+  width: 54.18px;
+  height: 54.18px;
+  border-radius: 50%;
+  background: rgba(49, 30, 62, 1);
+  position: absolute;
+  display: none;
+}
+.ticket-centr-bgdl {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background: rgba(49, 30, 62, 1);
+  position: absolute;
+  display: none;
+}
+.ticket-centr-bgdr {
+  width: 73.61px;
+  height: 73.61px;
+  border-radius: 50%;
+  background: rgba(49, 30, 62, 1);
+  position: absolute;
+  display: none;
+}
+.ticket-centr-bgcl {
+  width: 9px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(49, 30, 62, 1);
+  position: absolute;
+  display: none;
+}
+.ticket-centr-bgcr {
+  width: 17.08px;
+  height: 17.08px;
+  border-radius: 50%;
+  background: rgba(49, 30, 62, 1);
+  position: absolute;
+  display: none;
 }
 @media (max-width: 1024px) {
   .ticket-centr {
     padding: 40px 26px 34px 40px;
+  }
+  .ticket-centr-bgl {
+    display: block;
+    left: -12px;
+    top: -21px;
+  }
+  .ticket-centr-bgr {
+    display: block;
+    top: -29px;
+    right: 13px;
+  }
+  .ticket-centr-bgdl {
+    display: block;
+    left: 10px;
+    bottom: 6px;
+  }
+  .ticket-centr-bgdr {
+    display: block;
+    right: 25px;
+    bottom: -42px;
+  }
+  .ticket-centr-bgcl {
+    display: block;
+    left: 57px;
+    top: 63px;
+  }
+  .ticket-centr-bgcr {
+    display: block;
+    right: 75px;
+    top: 34px;
   }
 }
 .ticket-centr-text {
