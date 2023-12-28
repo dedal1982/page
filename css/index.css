@@ -1360,7 +1360,7 @@ ul {
   box-shadow: 0px 10px 20px 0px #0000001a;
   border-radius: 8px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .slide-item {
     margin: 0 auto;
   }
