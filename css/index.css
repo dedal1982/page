@@ -1159,7 +1159,7 @@ ul {
 }
 @media (max-width: 1024px) {
   .ticket-centr {
-    padding: 40px 26px 40px 40px;
+    padding: 40px 26px 34px 40px;
   }
 }
 .ticket-centr-text {
@@ -1227,14 +1227,6 @@ ul {
     display: block;
     left: 50%;
     transform: translate(-50%);
-    bottom: 45px;
-  }
-}
-@media (max-width: 767px) {
-  .ticket-left-m {
-    top: 70px;
-  }
-  .ticket-right-m {
     bottom: 45px;
   }
 }
