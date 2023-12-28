@@ -1789,3 +1789,24 @@ ul {
     margin-top: 33px;
   }
 }
+.reviews-prev,
+.reviews-next {
+  width: 11px;
+  height: 19px;
+  position: absolute;
+  z-index: 10;
+}
+.reviews-prev::before {
+  content: url(../images/prev.svg);
+}
+.reviews-next::before {
+  content: url(../images/next.svg);
+}
+.reviews-prev {
+  left: 0;
+  top: 47%;
+}
+.reviews-next {
+  right: 0;
+  top: 47%;
+}

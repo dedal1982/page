@@ -72,8 +72,8 @@ const swiperReviews = new Swiper(".reviews-swiper", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".reviews-next",
+    prevEl: ".reviews-prev",
   },
   breakpoints: {
     320: {
@@ -93,7 +93,7 @@ const swiperReviews = new Swiper(".reviews-swiper", {
       spaceBetween: 40,
     },
     768: {
-      slidesPerView: 2.5,
+      slidesPerView: 2,
       spaceBetween: 10,
     },
     769: {
