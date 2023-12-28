@@ -1462,3 +1462,9 @@ ul {
     bottom: 20px;
   }
 }
+.ransom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 105px;
+}
