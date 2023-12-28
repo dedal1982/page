@@ -37,7 +37,7 @@ ul {
     font-size: 40px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .section-title {
     font-size: 32px;
   }
@@ -963,7 +963,7 @@ ul {
     margin-top: 40px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .advantages-list {
     flex-wrap: wrap;
     justify-content: center;
@@ -1346,7 +1346,7 @@ ul {
   padding: 20px;
   box-sizing: border-box;
 }
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
   .bought-out-swiper {
     margin-top: 8px;
   }
@@ -1463,8 +1463,104 @@ ul {
   }
 }
 .ransom {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 105px;
+}
+@media (max-width: 768px) {
+  .ransom {
+    margin-top: 48px;
+  }
+}
+.ransom-list {
+  margin-top: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.ransom-list-item {
+  max-width: 237px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.ransom-list li:nth-child(1) {
+  max-width: 199px;
+}
+.ransom-list li:nth-child(2) {
+  max-width: 221px;
+}
+.ransom-list li:nth-child(3) {
+  max-width: 237px;
+}
+.ransom-list li:nth-child(4) {
+  max-width: 233px;
+}
+.ransom-list-item::after {
+  position: absolute;
+  content: url(../images/arrow-1.svg);
+  top: 50px;
+  right: -82px;
+}
+.last-item::after {
+  content: none;
+}
+@media (max-width: 1024px) {
+  .ransom-list li:nth-child(1) {
+    max-width: 129px;
+  }
+  .ransom-list li:nth-child(2) {
+    max-width: 142px;
+  }
+  .ransom-list li:nth-child(3) {
+    max-width: 181px;
+  }
+  .ransom-list li:nth-child(4) {
+    max-width: 149px;
+  }
+  .ransom-list-item::after {
+    content: url(../images/arrow-m.svg);
+  }
+  .last-item::after {
+    content: none;
+  }
+}
+@media (max-width: 905px) {
+  .ransom-list-item::after {
+    content: url(../images/arrow-m.svg);
+    right: -42px;
+  }
+  .last-item::after {
+    content: none;
+  }
+  .ransom-desc {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+.ransom-circle {
+  background: linear-gradient(135.43deg, #442d54 25.42%, #311e3e 79.93%);
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+}
+.ransom-list-title {
+  color: #00b05e;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+  text-align: center;
+  margin-top: 15px;
+}
+@media (max-width: 1024px) {
+  .ransom-list-title {
+    font-size: 20px;
+    line-height: 16px;
+  }
+}
+.ransom-desc {
+  color: #311e3e;
+  margin-top: 15px;
 }
