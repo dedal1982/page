@@ -41,7 +41,7 @@ const swiper = new Swiper(".bought-out-swiper", {
     },
     835: {
       slidesPerView: 3,
-      spaceBetween: 10,
+      spaceBetween: 40,
     },
     1280: {
       slidesPerView: 4,
