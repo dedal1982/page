@@ -1720,6 +1720,11 @@ ul {
   justify-content: space-between;
   margin-top: 73px;
 }
+@media (max-width: 1194px) {
+  .reviews-list {
+    display: none;
+  }
+}
 .reviews-item {
   width: 285px;
   height: 417px;
