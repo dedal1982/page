@@ -1708,6 +1708,7 @@ ul {
   flex-direction: column;
   padding-top: 108px;
   padding-bottom: 120px;
+  align-items: center;
 }
 .reviews h2 {
   color: #ffffff;
@@ -1717,6 +1718,7 @@ ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-top: 73px;
 }
 .reviews-item {
   width: 285px;
@@ -1739,4 +1741,9 @@ ul {
   width: 100%;
   height: 100%;
   border-radius: inherit;
+}
+.reviews-button {
+  width: 386px;
+  height: 42px;
+  margin-top: 40px;
 }
