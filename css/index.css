@@ -1138,7 +1138,7 @@ ul {
   padding-bottom: 120px;
   box-sizing: border-box;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1332px) {
   .ticket-wrapper {
     padding-top: 189px;
     padding-bottom: 187px;
@@ -1221,12 +1221,13 @@ ul {
     display: block;
     left: 50%;
     transform: translate(-50%);
+    top: 70px;
   }
   .ticket-right-m {
     display: block;
     left: 50%;
     transform: translate(-50%);
-    bottom: 0;
+    bottom: 45px;
   }
 }
 @media (max-width: 767px) {
