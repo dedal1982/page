@@ -40,6 +40,7 @@ ul {
 @media (max-width: 768px) {
   .section-title {
     font-size: 32px;
+    line-height: 32px;
   }
 }
 /*общий контейнер ограничивающий ширину тела по макету*/
@@ -1617,4 +1618,84 @@ ul {
 .ransom-desc {
   color: #311e3e;
   margin-top: 15px;
+}
+/***necessary***/
+.necessary {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+@media (max-width: 768px) {
+  .necessary {
+    margin-top: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .necessary {
+    margin-top: 37px;
+  }
+}
+.necessary h1 {
+  color: #311e3e;
+  text-align: center;
+}
+.necessary-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+@media (max-width: 1023px) {
+  .necessary-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .necessary-list {
+    margin-top: 55px;
+    row-gap: 47px;
+  }
+}
+@media (max-width: 500px) {
+  .necessary-list {
+    column-gap: 30px;
+  }
+}
+.necessary-list-item {
+  width: 192px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .necessary-list-item {
+    width: 150px;
+  }
+}
+.necessary-circle .no-hidden {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.necessary-circle .img-hidden {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+@media (max-width: 1024px) {
+  .necessary-circle .no-hidden {
+    display: none;
+  }
+  .necessary-circle .img-hidden {
+    display: block;
+  }
 }
