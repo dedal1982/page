@@ -1415,11 +1415,11 @@ ul {
   z-index: 10;
 }
 .bought-out-prev {
-  left: -18px;
+  left: 0;
   top: 47%;
 }
 .bought-out-next {
-  right: -18px;
+  right: 0;
   top: 47%;
 }
 .bought-out-prev::before {
