@@ -1052,6 +1052,7 @@ ul {
 @media (max-width: 1024px) {
   .condition-list {
     margin-top: 40px;
+    justify-content: space-around;
   }
 }
 @media (max-width: 767px) {
