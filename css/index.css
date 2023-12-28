@@ -1335,7 +1335,7 @@ ul {
 .bought-out-swiper {
   width: 1164px;
   height: 453px;
-  margin-top: 74px;
+  margin-top: 54px;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -1396,12 +1396,12 @@ ul {
   position: absolute;
 }
 .bought-out-prev {
-  left: -36px;
-  top: 49%;
+  left: -18px;
+  top: 47%;
 }
 .bought-out-next {
-  right: -36px;
-  top: 49%;
+  right: -18px;
+  top: 47%;
 }
 .bought-out-prev::before {
   content: url(../images/prev.svg);
