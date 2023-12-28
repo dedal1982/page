@@ -1324,12 +1324,18 @@ ul {
 }
 @media (max-width: 1024px) {
   .bought-out-wrapper {
-    padding-top: 48px;
+    padding-top: 37px;
     padding-bottom: 48px;
   }
 }
 .bought-out h2 {
   color: #311e3e;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .bought-out h2 {
+    line-height: 35px;
+  }
 }
 /***bought-out-swiper***/
 .bought-out-swiper {
@@ -1340,6 +1346,11 @@ ul {
   padding: 20px;
   box-sizing: border-box;
 }
+@media (max-width: 1024px) {
+  .bought-out-swiper {
+    margin-top: 8px;
+  }
+}
 .slide-item {
   width: 251px;
   height: 413px;
@@ -1349,6 +1360,12 @@ ul {
   box-shadow: 0px 10px 20px 0px #0000001a;
   border-radius: 8px;
 }
+@media (max-width: 767px) {
+  .slide-item {
+    margin: 0 auto;
+  }
+}
+
 .slide-image {
   width: 251px;
   height: 188px;
@@ -1413,4 +1430,5 @@ ul {
 }
 .bought-out-inner {
   position: relative;
+  width: 100%;
 }

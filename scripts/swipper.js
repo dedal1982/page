@@ -17,15 +17,31 @@ const swiper = new Swiper(".bought-out-swiper", {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 40,
     },
     375: {
-      slidesPerView: 2,
-      spaceBetween: 10,
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    425: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    500: {
+      slidesPerView: 1,
+      spaceBetween: 40,
     },
     768: {
+      slidesPerView: 2.5,
+      spaceBetween: 10,
+    },
+    769: {
+      slidesPerView: 2.5,
+      spaceBetween: 10,
+    },
+    835: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 10,
     },
     1280: {
       slidesPerView: 4,
