@@ -118,3 +118,26 @@ const swiperReviews = new Swiper(".reviews-swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+const swiperAny = new Swiper(".any-swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: false,
+  slidesPerView: 7,
+  spaceBetween: 10,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
