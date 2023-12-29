@@ -2366,3 +2366,32 @@ iframe {
 .footer-info-item li a:hover {
   opacity: 0.8;
 }
+.footer-form {
+  grid-area: c;
+  display: flex;
+  flex-direction: column;
+  margin-top: 54px;
+  margin-left: 52px;
+}
+.footer-form-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+.footer-form label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.footer-form input {
+  width: 325px;
+  height: 44px;
+  border-radius: 5px;
+  border: none;
+  background: #ffffff;
+}
+input {
+  outline: none;
+}
