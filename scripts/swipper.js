@@ -135,7 +135,32 @@ const swiperAny = new Swiper(".any-swiper", {
     nextEl: ".any-button-next",
     prevEl: ".any-button-prev",
   },
-
+  breakpoints: {
+    320: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    375: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    425: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    500: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 40,
+    },
+    1280: {
+      slidesPerView: 7,
+      spaceBetween: 40,
+    },
+  },
   // And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
