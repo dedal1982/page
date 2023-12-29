@@ -2020,6 +2020,7 @@ ul {
 .any-button-next::after {
   color: #00b05e;
   font-size: 15px;
+  font-weight: bold;
 }
 .any-button-prev {
   left: var(--swiper-navigation-sides-offset, -9px) !important;
@@ -2143,6 +2144,7 @@ iframe {
 .inspection-button-next::after {
   color: #00b05e;
   font-size: 15px;
+  font-weight: bold;
 }
 .inspection-button-prev {
   left: var(--swiper-navigation-sides-offset, -9px) !important;
