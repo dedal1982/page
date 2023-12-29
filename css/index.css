@@ -1997,7 +1997,7 @@ ul {
   padding-right: 20px;
   box-sizing: border-box;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .any-swiper {
     margin-top: 35px;
     padding-left: 10px;
