@@ -124,7 +124,7 @@ const swiperAny = new Swiper(".any-swiper", {
   direction: "horizontal",
   loop: false,
   slidesPerView: 7,
-  spaceBetween: 10,
+  spaceBetween: 40,
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
@@ -132,8 +132,8 @@ const swiperAny = new Swiper(".any-swiper", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".any-button-next",
+    prevEl: ".any-button-prev",
   },
 
   // And if we need scrollbar
