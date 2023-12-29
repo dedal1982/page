@@ -1992,14 +1992,12 @@ ul {
   max-width: 1164px;
   width: 100%;
   height: fit-content;
-  margin-top: 75px;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
 }
 @media (max-width: 768px) {
   .any-swiper {
-    margin-top: 35px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -2007,6 +2005,12 @@ ul {
 .any-swiper-container {
   position: relative;
   width: 100%;
+  margin-top: 75px;
+}
+@media (max-width: 768px) {
+  .any-swiper-container {
+    margin-top: 35px;
+  }
 }
 .any-swiper-item {
   width: 140px;
@@ -2032,6 +2036,7 @@ ul {
   height: 19px;
   position: absolute;
   z-index: 10;
+  top: calc(50% - 11px);
 }
 .any-button-prev::before {
   content: url(../images/prev.svg);
@@ -2040,18 +2045,8 @@ ul {
   content: url(../images/next.svg);
 }
 .any-button-prev {
-  top: 68%;
   left: 0px;
 }
 .any-button-next {
-  top: 68%;
   right: 0px;
-}
-@media (max-width: 768px) {
-  .any-button-prev {
-    top: 61%;
-  }
-  .any-button-next {
-    top: 61%;
-  }
 }
