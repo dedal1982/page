@@ -2340,3 +2340,29 @@ iframe {
 .footer-top li a:hover {
   border-bottom: none;
 }
+.footer-info {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  margin-top: 54px;
+  grid-area: b;
+}
+.footer-info-item {
+  max-width: 223px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-info-item li p,
+.footer-info-item li a {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 19.4px;
+  color: #ffffff;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+}
+.footer-info-item li a:hover {
+  opacity: 0.8;
+}
