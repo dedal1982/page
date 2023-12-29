@@ -57,50 +57,19 @@ function loadYouTubeVideo() {
 }
 
 //аккордеон
-// Получаем все элементы с классом accord-title
-// Получаем все элементы с классом "accord-title"
-var accordTitles = document.getElementsByClassName("accord-title");
+const buttons = document.querySelectorAll(".accord-title");
 
-// Проходим по всем элементам "accord-title" и добавляем обработчик события клика
-for (var i = 0; i < accordTitles.length; i++) {
-  accordTitles[i].addEventListener("click", function () {
-    // При клике на элемент "accord-title" добавляем/удаляем класс "active"
-    this.classList.toggle("active");
-
-    // Получаем элемент "accord-answer", который находится в том же родительском элементе
-    var accordAnswer = this.nextElementSibling;
-
-    // При клике на элемент "accord-title" также добавляем/удаляем класс "active" для "accord-answer"
-    accordAnswer.classList.toggle("active");
+buttons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    const closestButtonContainer = button.closest(".accord-item");
+    if (closestButtonContainer) {
+      const elementsToToggle = closestButtonContainer.querySelectorAll(
+        ".accord-answer, .accord-plus"
+      );
+      elementsToToggle.forEach((element) => {
+        element.classList.toggle("active");
+      });
+    }
   });
-}
-
-// const makeCodeUniversal = (
-//   tabItemsQuery,
-//   formItemsQuery,
-//   tabClassName = "active"
-// ) => {
-//   const tabItems = Array.from(document.querySelectorAll(tabItemsQuery));
-//   const formItems = Array.from(document.querySelectorAll(formItemsQuery));
-
-//   const clearActiveTabs = (element) => {
-//     element.find((item) => item.classList.remove(tabClassName));
-//   };
-
-//   const setActiveTab = (element, index) => {
-//     element[index].classList.add(tabClassName);
-//   };
-
-//   const chekTab = (item, index) => {
-//     item.addEventListener("click", () => {
-//       clearActiveTabs(tabItems);
-//       clearActiveTabs(formItems);
-
-//       setActiveTab(tabItems, index);
-//       setActiveTab(formItems, index);
-//     });
-//   };
-//   tabItems.forEach(chekTab);
-// };
-// // /*табы / секция Наши реализованные проекты*/
-// makeCodeUniversal(".accord-title", ".accord-answer");
+});

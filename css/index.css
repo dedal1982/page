@@ -2215,32 +2215,46 @@ iframe {
   }
 }
 .accord-title {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 38.4px;
-  color: #311e3e;
   border-bottom: 0.5px solid #311e3e;
-  position: relative;
-  padding: 0.75rem 2.5rem 0.75rem 0rem;
+  padding: 0.75rem 0.5rem 0.75rem 0rem;
   box-sizing: border-box;
   cursor: pointer;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accord-title h6 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38.4px;
+  color: #311e3e;
 }
 @media (max-width: 1024px) {
-  .accord-title {
+  .accord-title h6 {
     font-size: 20px;
     line-height: 24px;
   }
 }
-.accord-title::before {
+@media (max-width: 500px) {
+  .accord-title h6 {
+    max-width: 295px;
+  }
+}
+.accord-plus {
+  display: block;
+  width: 20px !important;
+  height: 20px !important;
+  position: relative;
+}
+.accord-plus::before {
   content: "+";
   position: absolute;
   cursor: pointer;
-  right: 5px;
-  top: 2px;
-  width: 20px;
-  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   line-height: 38.4px;
   text-align: center;
   font-size: 32px;
@@ -2251,7 +2265,7 @@ iframe {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-.accord-title.active::before {
+.accord-plus.active::before {
   content: "-";
 }
 @media (max-width: 768px) {
