@@ -1789,26 +1789,17 @@ ul {
     margin-top: 33px;
   }
 }
-.reviews-prev,
-.reviews-next {
-  width: 11px;
-  height: 19px;
-  position: absolute;
-  z-index: 10;
-}
-.reviews-prev::before {
-  content: url(../images/prev.svg);
-}
-.reviews-next::before {
-  content: url(../images/next.svg);
+.reviews-prev::after,
+.reviews-next::after {
+  color: #00b05e;
+  font-size: 15px;
+  font-weight: bold;
 }
 .reviews-prev {
-  left: 0;
-  top: 47%;
+  left: var(--swiper-navigation-sides-offset, -9px) !important;
 }
 .reviews-next {
-  right: 0;
-  top: 47%;
+  right: var(--swiper-navigation-sides-offset, -9px) !important;
 }
 /***any***/
 .any {
