@@ -2309,6 +2309,17 @@ iframe {
 .map-section {
   width: 100%;
 }
+.map-container {
+  width: 100%;
+  height: 415px;
+  background: url("...") center center no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1024px) {
+  .map-container {
+    height: 259px;
+  }
+}
 /***footer***/
 .footer {
   background: #261432;
@@ -2377,6 +2388,7 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
   margin-top: 14px;
 }
 .footer-form label {
@@ -2438,5 +2450,118 @@ input {
 .footer-btn-item .agreement span:hover {
   border-bottom: none;
 }
+/***адаптив футера***/
 @media (max-width: 1196px) {
+  .footer-form {
+    align-items: flex-start;
+  }
+  .footer-form-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-btn {
+    margin-top: 10px;
+  }
+  .footer-btn-item .agreement {
+    margin-top: 10px;
+    align-self: start;
+  }
+  .footer-info {
+    flex-direction: column;
+  }
+  .footer-info {
+    margin-top: 54px;
+    gap: 12px;
+  }
+  .footer-wrapper {
+    grid-template-areas:
+      "a a a"
+      "b . c";
+  }
+  .footer-wrapper {
+    padding-top: 46px;
+    padding-bottom: 48px;
+  }
+}
+@media (max-width: 924px) {
+  .footer-top li a {
+    font-size: 14px;
+    line-height: 11.2px;
+  }
+  .footer-info-item li p,
+  .footer-info-item li a {
+    font-size: 12px;
+    line-height: 9.6px;
+  }
+  .footer-form label {
+    font-size: 18px;
+    line-height: 14.4px;
+  }
+  .footer-form input::placeholder {
+    font-size: 12px;
+    line-height: 13.77px;
+  }
+  .footer-btn {
+    font-size: 14px;
+  }
+  .footer-form {
+    margin-left: auto;
+  }
+}
+@media (max-width: 640px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .footer-form input {
+    width: 175px;
+    height: 32px;
+  }
+  .footer-btn {
+    width: 121px;
+    height: 32px;
+  }
+  .footer-btn-item {
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+  }
+  .footer-wrapper {
+    padding-top: 40px;
+  }
+  .footer-wrapper {
+    grid-template-areas: "b a c";
+  }
+  .footer-form {
+    margin-top: 0;
+  }
+  .footer-form-item {
+    margin-top: 17px;
+  }
+  .footer-top {
+    gap: 8px;
+  }
+  .footer-info {
+    margin-top: 6px;
+  }
+  .footer-info .footer-info-item:nth-child(2) {
+    gap: 3px;
+  }
+  .footer-wrapper {
+    padding-bottom: 44px;
+  }
+}
+@media (max-width: 530px) {
+  .footer-wrapper {
+    grid-template-areas:
+      "a c"
+      "b c";
+  }
+  .footer-top {
+    justify-content: inherit;
+  }
+  .footer-info {
+    margin-top: 20px;
+  }
 }
