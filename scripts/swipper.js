@@ -124,7 +124,7 @@ const swiperAny = new Swiper(".any-swiper", {
   direction: "horizontal",
   loop: false,
   slidesPerView: 7,
-  spaceBetween: 40,
+  spaceBetween: 10,
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
