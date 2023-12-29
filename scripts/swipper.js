@@ -202,15 +202,15 @@ const swiperInspection = new Swiper(".inspection-swiper", {
     },
     650: {
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 10,
     },
     769: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 0,
     },
     890: {
-      slidesPerView: 3,
-      spaceBetween: 20,
+      slidesPerView: 2,
+      spaceBetween: 0,
     },
   },
   // And if we need scrollbar
