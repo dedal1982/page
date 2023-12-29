@@ -138,22 +138,26 @@ const swiperAny = new Swiper(".any-swiper", {
   breakpoints: {
     320: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 0,
     },
     375: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 0,
     },
     425: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 0,
     },
-    500: {
-      slidesPerView: 3,
+    650: {
+      slidesPerView: 5,
       spaceBetween: 40,
     },
     768: {
       slidesPerView: 5,
+      spaceBetween: 40,
+    },
+    769: {
+      slidesPerView: 7,
       spaceBetween: 40,
     },
     1280: {
