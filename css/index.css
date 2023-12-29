@@ -1988,12 +1988,13 @@ ul {
   }
 }
 .any-swiper {
-  max-width: 1164px;
+  max-width: 1200px;
   width: 100%;
   height: fit-content;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
+  margin-top: 75px;
 }
 @media (max-width: 768px) {
   .any-swiper {
@@ -2001,13 +2002,8 @@ ul {
     padding-right: 10px;
   }
 }
-.any-swiper-container {
-  position: relative;
-  width: 100%;
-  margin-top: 75px;
-}
 @media (max-width: 768px) {
-  .any-swiper-container {
+  .any-swiper {
     margin-top: 35px;
   }
 }
@@ -2029,26 +2025,18 @@ ul {
   max-width: 100%;
   max-height: 100%;
 }
-.any-button-prev,
-.any-button-next {
-  width: 11px;
-  height: 19px;
-  position: absolute;
-  z-index: 10;
-  top: calc(50% - 11px);
-}
-.any-button-prev::before {
-  content: url(../images/prev.svg);
-}
-.any-button-next::before {
-  content: url(../images/next.svg);
+.any-button-prev::after,
+.any-button-next::after {
+  color: #00b05e;
+  font-size: 15px;
 }
 .any-button-prev {
-  left: 0px;
+  left: var(--swiper-navigation-sides-offset, -9px) !important;
 }
 .any-button-next {
-  right: 0px;
+  right: var(--swiper-navigation-sides-offset, -9px) !important;
 }
+
 /***inspection***/
 .inspection {
   background: rgba(49, 30, 62, 1);
