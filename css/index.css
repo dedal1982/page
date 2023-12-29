@@ -1340,11 +1340,14 @@ ul {
 }
 /***bought-out-swiper***/
 .bought-out-swiper {
-  max-width: 1164px;
+  max-width: 1184px;
   width: 100%;
   height: 535px;
   margin-top: 54px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   box-sizing: border-box;
 }
 @media (max-width: 767px) {
@@ -1409,30 +1412,19 @@ ul {
   margin-top: 10px;
 }
 /***кнопки слайдера***/
-.bought-out-prev,
-.bought-out-next {
-  width: 11px;
-  height: 19px;
-  position: absolute;
-  z-index: 10;
+.bought-out-prev::after,
+.bought-out-next::after {
+  color: #00b05e;
+  font-size: 15px;
+  font-weight: bold;
 }
 .bought-out-prev {
-  left: 0;
-  top: 40%;
+  left: var(--swiper-navigation-sides-offset, -9px) !important;
+  top: var(--swiper-navigation-top-offset, 36%) !important;
 }
 .bought-out-next {
-  right: 0;
-  top: 40%;
-}
-.bought-out-prev::before {
-  content: url(../images/prev.svg);
-}
-.bought-out-next::before {
-  content: url(../images/next.svg);
-}
-.bought-out-inner {
-  position: relative;
-  width: 100%;
+  right: var(--swiper-navigation-sides-offset, -9px) !important;
+  top: var(--swiper-navigation-top-offset, 36%) !important;
 }
 .bought-out-swiper-btn {
   position: absolute;
