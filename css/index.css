@@ -2139,6 +2139,9 @@ iframe {
 /***inspection-swiper***/
 .inspection-swiper {
   display: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 @media (max-width: 1217px) {
   .inspection-swiper {
@@ -2156,4 +2159,15 @@ iframe {
 }
 .swiper-slide .inspection-video-item {
   margin: 0 auto;
+}
+.inspection-button-prev::after,
+.inspection-button-next::after {
+  color: #00b05e;
+  font-size: 15px;
+}
+.inspection-button-prev {
+  left: var(--swiper-navigation-sides-offset, -9px) !important;
+}
+.inspection-button-next {
+  right: var(--swiper-navigation-sides-offset, -9px) !important;
 }

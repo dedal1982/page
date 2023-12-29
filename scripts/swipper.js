@@ -190,15 +190,15 @@ const swiperInspection = new Swiper(".inspection-swiper", {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 40,
     },
     375: {
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 40,
     },
     425: {
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 40,
     },
     650: {
       slidesPerView: 2,
