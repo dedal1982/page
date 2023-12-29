@@ -2305,3 +2305,11 @@ iframe {
     width: 90%;
   }
 }
+/***map-section***/
+.map-section {
+  width: 100%;
+}
+/***footer***/
+.footer {
+  background: #261432;
+}
