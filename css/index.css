@@ -2385,13 +2385,25 @@ iframe {
   line-height: 16px;
   color: #ffffff;
 }
+input {
+  outline: none;
+}
 .footer-form input {
   width: 325px;
   height: 44px;
   border-radius: 5px;
   border: none;
   background: #ffffff;
+  padding: 12px 16px 14px 16px;
+  box-sizing: border-box;
 }
-input {
-  outline: none;
+.footer-form input::placeholder {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.36px;
+  color: #767676;
+}
+.footer-form input:focus::placeholder {
+  color: transparent;
 }
