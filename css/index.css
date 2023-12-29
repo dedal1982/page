@@ -2313,3 +2313,30 @@ iframe {
 .footer {
   background: #261432;
 }
+.footer-wrapper {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: grid;
+  grid-template-areas:
+    "a a a"
+    "b c c";
+}
+.footer-top {
+  grid-area: a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-top li a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 16px;
+  color: #ffffff;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+.footer-top li a:hover {
+  border-bottom: none;
+}
