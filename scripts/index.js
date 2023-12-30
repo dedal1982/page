@@ -47,7 +47,10 @@ function removeForm(event) {
 
 // Получаем кнопку "+" и добавляем обработчик клика
 var plusButton = document.querySelector(".plusButton");
-plusButton.addEventListener("click", addForm);
+plusButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  addForm();
+});
 
 //аккордеон
 const buttons = document.querySelectorAll(".accord-title");
