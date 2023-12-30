@@ -862,7 +862,7 @@ ul {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 14px;
+  gap: 24px;
 }
 @media (max-width: 767px) {
   .promo__form-top {
