@@ -69,7 +69,7 @@ buttons.forEach((button) => {
     }
   });
 });
-
+//липкий хедер
 window.addEventListener("scroll", function () {
   var header = document.getElementById("sticky-header");
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
