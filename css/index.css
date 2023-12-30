@@ -950,6 +950,7 @@ ul {
   opacity: 0;
   height: 24px;
   z-index: 20;
+  cursor: pointer;
 }
 .formRow::before {
   position: absolute;
