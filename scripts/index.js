@@ -34,6 +34,7 @@ function addForm() {
 }
 
 function removeForm(event) {
+  event.preventDefault();
   // Получаем родительскую строку формы
   var formRow = event.target.parentNode;
 
