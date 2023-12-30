@@ -25,6 +25,9 @@ ul {
   position: relative;
   background: rgba(49, 30, 62, 1);
 }
+.lock {
+  overflow: hidden;
+}
 .section-title {
   font-weight: 700;
   font-size: 56px;
