@@ -145,7 +145,8 @@ ul {
   .header__wrapper {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 19px;
+    margin-bottom: 21px;
+    margin-top: 9px;
   }
 }
 .header__top {
@@ -166,6 +167,11 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+@media (max-width: 767px) {
+  .logotype {
+    gap: 6px;
+  }
 }
 .company-name {
   font-size: 40px;
@@ -343,7 +349,7 @@ ul {
     position: relative;
     width: 40px;
     height: 20px;
-    margin-top: 11px;
+    margin-top: 19px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -752,7 +758,7 @@ ul {
   }
 }
 .promo h5 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -0.04em;
@@ -764,58 +770,12 @@ ul {
     font-size: 20px;
   }
 }
-.promo__text-box {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-@media (max-width: 1181px) {
-  .promo__text-box {
-    flex-direction: row;
-  }
-}
-@media (max-width: 767px) {
-  .promo__text-box {
-    text-align: left;
-    gap: 90px;
-  }
-}
-.promo__text-box ul {
-  display: flex;
-  flex-direction: column;
-}
-.promo__text-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 300;
-  font-size: 24px;
-  color: #311e3e;
-}
-.promo__text-item span {
-  font-weight: 500;
-  color: #00b35f;
-}
-@media (max-width: 767px) {
-  .promo__text-item {
-    font-size: 18px;
-  }
-}
-.promo__text-price {
-  font-weight: 500;
-  font-size: 39px;
-  color: #00b35f;
-}
-@media (max-width: 767px) {
-  .promo__text-price {
-    font-size: 20px;
-  }
-}
+
 /***promo__right***/
 .promo__right {
   max-width: 488px;
   width: 100%;
-  padding: 40px 20px 40px 20px;
+  padding: 25px 20px 40px 20px;
   display: flex;
   justify-content: center;
   border-radius: 8px;
@@ -842,6 +802,7 @@ ul {
   display: flex;
   flex-direction: column;
   text-align: center;
+  gap: 14px;
 }
 @media (max-width: 767px) {
   .promo__form-top {
@@ -2276,7 +2237,7 @@ ul {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 53px;
+  margin-top: 46px;
 }
 @media (max-width: 1024px) {
   .questions-accord {
@@ -2290,7 +2251,7 @@ ul {
 }
 .accord-title {
   border-bottom: 0.5px solid #311e3e;
-  padding: 0.75rem 0.5rem 0.75rem 0rem;
+  padding: 5px 0.5rem 24px 0;
   box-sizing: border-box;
   cursor: pointer;
   -webkit-transition: all 0.2s ease;
