@@ -23,6 +23,7 @@ ul {
   -moz-text-size-adjust: 100%;
   margin: 0 auto;
   position: relative;
+  background: rgba(49, 30, 62, 1);
 }
 .section-title {
   font-weight: 700;
@@ -62,6 +63,14 @@ ul {
   display: flex;
   padding-left: 20px;
   padding-right: 20px;
+}
+#sticky-header {
+  position: sticky;
+  background: rgb(49 30 62 / 94%);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  top: -145px;
+  transition: top 0.5s ease;
 }
 .header__wrapper {
   max-width: 1200px;
