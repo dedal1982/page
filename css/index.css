@@ -939,7 +939,7 @@ ul {
 .formRow {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 40px;
   margin-top: 16px;
 }
 .formRow input {
