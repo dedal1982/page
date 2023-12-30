@@ -824,6 +824,12 @@ ul {
   .promo__info-price {
     align-items: flex-start;
   }
+  .promo__info-price span {
+    margin-top: -5px;
+  }
+  .promo__info-top {
+    gap: 5px;
+  }
 }
 /***promo__right***/
 .promo__right {
@@ -861,6 +867,7 @@ ul {
 @media (max-width: 767px) {
   .promo__form-top {
     margin-bottom: 17px;
+    gap: 9px;
   }
 }
 .promo__form h4 {
