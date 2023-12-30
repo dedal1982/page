@@ -966,6 +966,11 @@ ul {
   padding-left: 16px;
   box-sizing: border-box;
 }
+@media (max-width: 767px) {
+  .formRow::before {
+    font-size: 15.5px;
+  }
+}
 @media (max-width: 425px) {
   .formRow::before {
     max-width: 277.57px;
@@ -1029,6 +1034,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .plusButton {
