@@ -2284,22 +2284,23 @@ ul {
   }
 }
 .accord-answer {
-  height: 0;
+  display: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
   overflow: hidden;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.accord-answer.active {
-  height: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 @media (max-width: 767px) {
-  .accord-answer.active {
+  .accord-answer {
     padding-top: 11px;
     padding-bottom: 0;
   }
 }
+.accord-answer.active {
+  display: block;
+}
+
 .accord-answer p {
   font-weight: 300;
   font-size: 18px;
