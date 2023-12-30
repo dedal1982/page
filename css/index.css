@@ -937,28 +937,25 @@ ul {
 .formRow input::-webkit-file-upload-button {
   visibility: hidden;
 }
-
-.formRow input {
-  width: 291px;
-  height: 24px;
-  border: 2px solid #f3f3f3;
-  background: linear-gradient(0deg, #ffffff, #ffffff);
-  border-radius: 5px;
-  color: transparent;
-  padding-left: 16px;
-  box-sizing: border-box;
-  position: relative;
-}
-@media (max-width: 767px) {
-  .formRow input {
-    width: 100%;
-  }
-}
 .formRow {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-top: 16px;
+}
+.formRow input {
+  position: relative;
+  width: 100%;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  height: 24px;
+  z-index: 20;
+}
+@media (max-width: 767px) {
+  .formRow input {
+    width: 100%;
+  }
 }
 .form-button {
   width: 325px;
@@ -997,28 +994,11 @@ ul {
 .formRow input::-webkit-file-upload-button {
   visibility: hidden;
 }
-.formRow input::before {
-  position: absolute;
-  content: "Выберите картинку";
-  color: #311e3e;
-  display: inline-block;
-  background: transparent;
-  outline: none;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  cursor: pointer;
-  font-weight: 300;
-  font-size: 15.5px;
-  line-height: 20px;
-  font-family: "PF Handbook Pro", sans-serif;
-}
+
 .formRow input:active {
   outline: 0;
 }
-.formRow input:active::before {
-  background: -webkit-linear-gradient(0deg, #ffffff, #ffffff);
-  border: 2px solid #f3f3f3 !important;
-}
+
 .plusButton {
   width: 24px;
   height: 24px;
@@ -1026,6 +1006,9 @@ ul {
   border: 2px solid #f3f3f3;
   border-radius: 5px;
   line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 767px) {
   .plusButton {
