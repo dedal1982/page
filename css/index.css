@@ -2226,8 +2226,8 @@ ul {
   font-style: normal;
   display: block;
   color: #00b05e;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .accord-plus.active::before {
   content: "-";
@@ -2239,20 +2239,21 @@ ul {
   }
 }
 .accord-answer {
-  display: none;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.accord-answer.active {
+  height: auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
 }
 @media (max-width: 767px) {
-  .accord-answer {
+  .accord-answer.active {
     padding-top: 11px;
     padding-bottom: 0;
   }
-}
-.accord-answer.active {
-  display: block;
 }
 .accord-answer p {
   font-weight: 300;
