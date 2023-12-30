@@ -1,3 +1,61 @@
+@import "owl.carousel.css";
+@import "owl.transitions.css";
+@import "remodal.css";
+@font-face {
+  font-family: "PF Handbook Pro";
+  src: url(../fonts/pf_handbook_pro_regular-webfont.eot);
+  src: url(../fonts/pf_handbook_pro_regular-webfont.eot?#iefix)
+      format("embedded-opentype"),
+    url(../fonts/pf_handbook_pro_regular-webfont.woff2) format("woff2"),
+    url(../fonts/pf_handbook_pro_regular-webfont.woff) format("woff"),
+    url(../fonts/pf_handbook_pro_regular-webfont.ttf) format("truetype"),
+    url(../fonts/pf_handbook_pro_regular-webfont.svg) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PF Handbook Pro";
+  src: url(../fonts/pf_handbook_pro_bold-webfont.eot);
+  src: url(../fonts/pf_handbook_pro_bold-webfont.eot?#iefix)
+      format("embedded-opentype"),
+    url(../fonts/pf_handbook_pro_bold-webfont.woff2) format("woff2"),
+    url(../fonts/pf_handbook_pro_bold-webfont.woff) format("woff"),
+    url(../fonts/pf_handbook_pro_bold-webfont.ttf) format("truetype"),
+    url(../fonts/pf_handbook_pro_bold-webfont.svg) format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PF Handbook Pro";
+  font-display: swap;
+  src: url(../fonts/pf_handbook_pro_thin-webfont.eot);
+  src: url(../fonts/pf_handbook_pro_thin-webfont.eot?#iefix)
+      format("embedded-opentype"),
+    url(../fonts/pf_handbook_pro_thin-webfont.woff2) format("woff2"),
+    url(../fonts/pf_handbook_pro_thin-webfont.woff) format("woff"),
+    url(../fonts/pf_handbook_pro_thin-webfont.ttf) format("truetype"),
+    url(../fonts/pf_handbook_pro_thin-webfont.svg#pf_handbook_prothin)
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PF Handbook Pro";
+  font-display: swap;
+  src: url(../fonts/pf_handbook_pro_medium-webfont.eot);
+  src: url(../fonts/pf_handbook_pro_medium-webfont.eot?#iefix)
+      format("embedded-opentype"),
+    url(../fonts/pf_handbook_pro_medium-webfont.woff2) format("woff2"),
+    url(../fonts/pf_handbook_pro_medium-webfont.woff) format("woff"),
+    url(../fonts/pf_handbook_pro_medium-webfont.ttf) format("truetype"),
+    url(../fonts/pf_handbook_pro_medium-webfont.svg) format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
   font-size: 100%;
@@ -107,6 +165,7 @@ ul {
 .logotype {
   display: flex;
   flex-direction: column;
+  gap: 18px;
 }
 .company-name {
   font-size: 40px;
@@ -115,6 +174,7 @@ ul {
   text-transform: uppercase;
   color: #3cc270;
   letter-spacing: 0.2px;
+  margin-top: -17px;
 }
 @media (max-width: 1259px) {
   .company-name {
@@ -149,8 +209,8 @@ ul {
 .header__list-item {
   display: flex;
   align-items: center;
-  gap: 52px;
-  margin: 10px 79px 0 67px;
+  gap: 53px;
+  margin: 10px 53px 0 55px;
 }
 @media (max-width: 991px) {
   .header__list-item {
@@ -164,10 +224,12 @@ ul {
   gap: 12px;
 }
 .header__item-text {
-  font-family: "Tahoma", sans-serif;
-  font-weight: 600;
-  font-size: 15px;
   text-transform: uppercase;
+  font-family: Tahoma;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  letter-spacing: 0.07em;
 }
 .header-phone {
   width: 183px;
