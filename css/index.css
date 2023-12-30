@@ -978,6 +978,12 @@ ul {
     width: 100%;
   }
 }
+@media (max-width: 375px) {
+  .formRow::before {
+    max-width: 260px;
+    width: 100%;
+  }
+}
 @media (max-width: 767px) {
   .formRow input {
     width: 100%;
