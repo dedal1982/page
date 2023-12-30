@@ -408,6 +408,7 @@ ul {
   font-weight: 700;
   font-family: Arial;
   white-space: nowrap;
+  border: none;
 }
 .mobile-phone {
   font-size: 26px;
@@ -1181,7 +1182,7 @@ ul {
   padding-bottom: 120px;
   box-sizing: border-box;
 }
-@media (max-width: 1332px) {
+@media (max-width: 1600px) {
   .ticket-wrapper {
     padding-top: 189px;
     padding-bottom: 187px;
@@ -1334,7 +1335,7 @@ ul {
   display: none;
 }
 
-@media (max-width: 1332px) {
+@media (max-width: 1600px) {
   .ticket-left,
   .ticket-right {
     display: none;
@@ -1486,6 +1487,7 @@ ul {
   font-size: 18px;
   line-height: 33px;
   letter-spacing: -0.2px;
+  z-index: 5;
 }
 .bought-out-swiper-btn:hover {
   border: 1px solid #00894e;
