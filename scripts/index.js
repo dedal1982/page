@@ -66,21 +66,6 @@ buttons.forEach((button) => {
   });
 });
 
-// window.onscroll = function () {
-//   stickyHeader();
-// };
-
-// var header = document.getElementById("sticky-header");
-// var sticky = header.offsetTop;
-
-// function stickyHeader() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
-
 window.addEventListener("scroll", function () {
   var header = document.getElementById("sticky-header");
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
